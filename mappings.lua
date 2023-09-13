@@ -4,7 +4,7 @@
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
 return {
-  -- first key is the mode
+  -- NORMAL MODE: first key is the mode
   n = {
     -- second key is the lefthand side of the map
 
@@ -33,8 +33,17 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
+  -- TERMINAL MODE
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  -- VISUAL MODE
+  v = {
+
+  },
+  -- INSERT MODE
+  i = {
+
   },
 }
