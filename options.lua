@@ -7,6 +7,29 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    -- column width & tab sizes
+    colorcolumn = "120",
+    tabstop = 2,
+    softtabstop = 2,
+    -- add support for showing hidden whitespace characters
+    -- toggle for on/off status
+    list = true,
+    -- character configs
+    listchars = {
+      tab = "→ ",
+      eol = "↲",
+      nbsp = "␣",
+      trail = "•",
+      extends = "⟩",
+      precedes = "⟨",
+    },
+    fillchars = {
+      eob = " ",
+      fold = " ",
+      foldopen = "",
+      foldsep = "│",
+      foldclose = "",
+    },
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
