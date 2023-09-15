@@ -8,4 +8,23 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
+  {
+    "zen-mode.nvim",
+    opts = {
+      window = {
+        options = {
+          signcolumn = "yes",
+          list = true,
+        },
+      },
+      plugins = {
+        gitsigns = { enabled = true },
+        -- kitty
+        kitty = {
+          enabled = true,
+          font = "+6", -- font size increment
+        },
+      },
+    },
+  },
 }

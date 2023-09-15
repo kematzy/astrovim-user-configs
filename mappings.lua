@@ -32,6 +32,9 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- Add ZenMode toggle
+    ["<leader>Z"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
   },
   -- TERMINAL MODE
   t = {
@@ -44,7 +47,5 @@ return {
     ["K"] = { ":m '<-2<CR>gv=gv", desc = "Move line up" },
   },
   -- INSERT MODE
-  i = {
-
-  },
+  i = {},
 }
