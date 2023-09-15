@@ -7,4 +7,5 @@ return {
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
+  { import = "astrocommunity.editing-support.zen-mode-nvim" },
 }
