@@ -5,7 +5,9 @@ return {
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
-    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+
+    -- signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+    signcolumn = "yes:1", -- avoid page movement, keep Gitsign column fixed
     wrap = true, -- sets vim.opt.wrap
     -- wrap = false, -- sets vim.opt.wrap
     -- column width & tab sizes
