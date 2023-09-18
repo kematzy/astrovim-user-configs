@@ -6,6 +6,9 @@ return {
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
 
+    -- trying to fix the clipboard functionality
+    clipboard = "unnamedplus", -- Use the system clipboard
+
     -- signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     signcolumn = "yes:1", -- avoid page movement, keep Gitsign column fixed
     wrap = true, -- sets vim.opt.wrap
