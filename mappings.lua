@@ -35,6 +35,8 @@ return {
 
     -- Add ZenMode toggle
     ["<leader>Z"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
+    -- Toggle word wrap
+    ["<M-z>"] = { "<cmd>set wrap!<cr>", desc = "Toggle word wrap" },
   },
   -- TERMINAL MODE
   t = {
