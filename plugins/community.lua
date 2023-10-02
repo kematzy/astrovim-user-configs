@@ -31,4 +31,10 @@ return {
   -- Adds better command line functionality and notifications
   -- https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/utility/noice-nvim
   { import = "astrocommunity.utility.noice-nvim" },
+
+  {
+    -- You can toggle git blame messages on/off with the :GitBlameToggle command.
+    import = "astrocommunity.git.git-blame-nvim",
+    -- See: https://github.com/f-person/git-blame.nvim for configurations
+  },
 }
