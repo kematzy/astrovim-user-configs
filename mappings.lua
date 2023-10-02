@@ -37,6 +37,16 @@ return {
     ["<leader>Z"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
     -- Toggle word wrap
     ["<M-z>"] = { "<cmd>set wrap!<cr>", desc = "Toggle word wrap" },
+
+    -- Neotest shortcuts
+    ["<leader>tt"] = {
+      function() require("neotest").run.run() end,
+      desc = "Neotest Run",
+    },
+    ["<leader>tw"] = {
+      function() require("neotest").watch.toggle() end,
+      desc = "Neotest Watch",
+    },
   },
   -- TERMINAL MODE
   t = {
