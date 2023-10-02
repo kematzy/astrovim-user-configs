@@ -27,4 +27,8 @@ return {
       },
     },
   },
+
+  -- Adds better command line functionality and notifications
+  -- https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/utility/noice-nvim
+  { import = "astrocommunity.utility.noice-nvim" },
 }
