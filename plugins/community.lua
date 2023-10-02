@@ -11,7 +11,10 @@ return {
   -- },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   -- { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
+  --
+  -- https://github.com/AstroNvim/astrocommunity/blob/main/lua/astrocommunity/editing-support/zen-mode-nvim/
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
+  -- See: https://github.com/folke/zen-mode.nvim for configuration options
   {
     "zen-mode.nvim",
     opts = {
