@@ -37,4 +37,8 @@ return {
     import = "astrocommunity.git.git-blame-nvim",
     -- See: https://github.com/f-person/git-blame.nvim for configurations
   },
+
+  -- Dim inactive portions of the code you are editing.
+  -- See: https://github.com/folke/twilight.nvim
+  { import = "astrocommunity.color.twilight-nvim" },
 }
