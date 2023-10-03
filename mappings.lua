@@ -40,11 +40,18 @@ return {
 
     -- Neotest shortcuts
     ["<leader>tt"] = {
-      function() require("neotest").run.run() end,
+      function()
+        local nt = require "neotest"
+        nt.run.run(vim.fn.expand "%")
+      end,
       desc = "Neotest Run",
     },
     ["<leader>tw"] = {
-      function() require("neotest").watch.toggle() end,
+      function()
+        local nt = require "neotest"
+        nt.watch.toggle()
+        nt.summary.toggle()
+      end,
       desc = "Neotest Watch",
     },
   },
