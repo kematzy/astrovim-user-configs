@@ -19,6 +19,8 @@ return {
         "jsonls",
         "quick_lint_js", -- JavaScript
         "phpactor", -- PHP
+        "intelephense", -- PHP
+        "psalm", -- PHP
         "pest_ls",
         "prismals",
         "ruby_ls",
