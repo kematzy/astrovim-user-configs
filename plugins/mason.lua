@@ -48,6 +48,7 @@ return {
         "rubocop",
         "phpstan",
         "phpcs",
+        "phpmd",
       })
     end,
   },
