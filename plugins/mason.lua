@@ -18,9 +18,9 @@ return {
         "html",
         "jsonls",
         "quick_lint_js", -- JavaScript
-        "phpactor", -- PHP
+        -- "phpactor", -- PHP
         "intelephense", -- PHP
-        "psalm", -- PHP
+        -- "psalm", -- PHP
         "pest_ls",
         "prismals",
         "ruby_ls",
@@ -46,9 +46,9 @@ return {
         "stylua",
         -- LINTERS
         "rubocop",
-        "phpstan",
-        "phpcs",
-        "phpmd",
+        -- "phpstan",
+        -- "phpcs",
+        -- "phpmd",
       })
     end,
   },
