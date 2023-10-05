@@ -39,56 +39,44 @@ return {
     ["<M-z>"] = { "<cmd>set wrap!<cr>", desc = "Toggle word wrap" },
 
     -- Neotest shortcuts
-    {
-      "<leader>tt",
+    ["<leader>tt"] = {
       function() require("neotest").run.run(vim.fn.expand "%") end,
       desc = "Neotest Run File",
     },
-    {
-      "<leader>tT",
+    ["<leader>tT"] = {
       function() require("neotest").run.run(vim.loop.cwd()) end,
-      desc = "Run All Test Files",
+      desc = "Neotest Run All Test Files",
     },
-    {
-      "<leader>tr",
+    ["<leader>tr"] = {
       function() require("neotest").run.run() end,
-      desc = "Run Nearest",
+      desc = "Neotest Run Nearest",
     },
-    {
-      "<leader>ts",
+    ["<leader>ts"] = {
       function() require("neotest").summary.toggle() end,
-      desc = "Toggle Summary",
+      desc = "Neotest Toggle Summary",
     },
-    {
-      "<leader>to",
-      function() require("neotest").output.open { enter = true, auto_close = true } end,
-      desc = "Show Output",
+    ["<leader>to"] = {
+      function()
+        require("neotest").output.open()
+        -- require("neotest").output.open {
+        --   short = true,
+        --   enter = true,
+        --   quiet = false,
+        --   quick = true,
+        --   last_run = true,
+        --   auto_close = true,
+        -- }
+      end,
+      desc = "Neotest Show Output",
     },
-    {
-      "<leader>tO",
+    ["<leader>tO"] = {
       function() require("neotest").output_panel.toggle() end,
-      desc = "Toggle Output Panel",
+      desc = "Neotest Toggle Output Panel",
     },
-    {
-      "<leader>tS",
+    ["<leader>tS"] = {
       function() require("neotest").run.stop() end,
-      desc = "Stop",
+      desc = "Neotest Stop",
     },
-    -- ["<leader>tt"] = {
-    --   function()
-    --     local nt = require "neotest"
-    --     nt.run.run(vim.fn.expand "%")
-    --   end,
-    --   desc = "Neotest Run",
-    -- },
-    -- ["<leader>tw"] = {
-    --   function()
-    --     local nt = require "neotest"
-    --     nt.watch.toggle()
-    --     nt.summary.toggle()
-    --   end,
-    --   desc = "Neotest Watch",
-    -- },
   },
   -- TERMINAL MODE
   t = {
