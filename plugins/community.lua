@@ -41,7 +41,7 @@ return {
 
   {
     -- You can toggle git blame messages on/off with the :GitBlameToggle command.
-    import = "astrocommunity.git.git-blame-nvim",
+    -- import = "astrocommunity.git.git-blame-nvim",
     -- See: https://github.com/f-person/git-blame.nvim for configurations
   },
 
