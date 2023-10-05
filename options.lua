@@ -11,10 +11,17 @@ return {
 
     -- signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     signcolumn = "yes:1", -- avoid page movement, keep Gitsign column fixed
+
     wrap = true, -- sets vim.opt.wrap
     -- wrap = false, -- sets vim.opt.wrap
-    -- column width & tab sizes
-    colorcolumn = "120",
+
+    -- column width
+    -- colorcolumn = "120",
+
+    -- Maximum width of text that is being inserted. A longer line will be broken after whitespace to get the width.
+    -- A zero value disables this.
+    textwidth = 120,
+
     -- Specifies the number of columns that a tab character should occupy when displayed.
     -- It determines how many spaces are used for each tab when you press the Tab key.
     tabstop = 2,
