@@ -15,20 +15,40 @@ return {
     -- wrap = false, -- sets vim.opt.wrap
     -- column width & tab sizes
     colorcolumn = "120",
+    -- Specifies the number of columns that a tab character should occupy when displayed.
+    -- It determines how many spaces are used for each tab when you press the Tab key.
     tabstop = 2,
+
+    -- specifies the number of spaces or columns that the cursor will move when you press the Tab key,
+    -- even if you're using actual tab characters (\t) for indentation.
+    -- Useful for consistent cursor movement and alignment when using tabs for indentation.
     softtabstop = 2,
+
+    -- Specifies the number of spaces to be used for each level of indentation
+    -- when using soft tabs (spaces instead of tabs).
+    shiftwidth = 2,
+
+    -- Tell Neovim to use spaces instead of tabs for indentation when set to true.
+    expandtab = true,
+
     -- add support for showing hidden whitespace characters
     -- toggle for on/off status
     list = true,
+
+    showbreak = "↪ ",
+
     -- character configs
     listchars = {
       tab = "→ ",
       eol = "↲",
       nbsp = "␣",
+      space = "·",
+      lead = "·",
       trail = "•",
       extends = "⟩",
       precedes = "⟨",
     },
+
     fillchars = {
       eob = " ",
       fold = " ",
@@ -37,6 +57,7 @@ return {
       foldclose = "",
     },
   },
+
   g = {
     mapleader = " ", -- sets vim.g.mapleader
     autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
