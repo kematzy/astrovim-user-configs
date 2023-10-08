@@ -19,7 +19,7 @@ return {
         "jsonls",
         "quick_lint_js", -- JavaScript
         -- "phpactor", -- PHP
-        "intelephense", -- PHP
+        -- "intelephense", -- PHP
         -- "psalm", -- PHP
         "pest_ls",
         "prismals",
@@ -44,6 +44,7 @@ return {
         -- FORMATTERS
         "prettier",
         "stylua",
+        "php-cs-fixer",
         -- LINTERS
         "rubocop",
         -- "phpstan",
