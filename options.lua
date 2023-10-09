@@ -1,61 +1,69 @@
 -- set vim options here (vim.<first_key>.<second_key> = value)
 return {
   opt = {
-    -- set to true or false etc.
-    relativenumber = true, -- sets vim.opt.relativenumber
-    number = true, -- sets vim.opt.number
-    spell = false, -- sets vim.opt.spell
+    -- add support for showing hidden whitespace characters
+    -- toggle for on/off status
+    list = true,
 
-    -- trying to fix the clipboard functionality
-    clipboard = "unnamedplus", -- Use the system clipboard
+    -- Characters used to visually show hidden characters
+    listchars = {
+      -- Two or three characters to be used to show a tab. The third character is optional.
+      tab = "→ ",
+      -- Character to show at the end of each line.
+      -- When omitted, there is no extra character at the end of the line.
+      eol = "↲",
+      -- Character to show for a non-breakable space character
+      nbsp = "␣",
+      -- Character to show for a space.
+      space = "·",
+      -- Character to show for leading spaces.
+      lead = "·",
+      -- Character to show for trailing spaces.
+      trail = "•",
+      -- Character to show in the last column, when 'wrap' is off and
+      -- the line continues beyond the right of the screen.
+      extends = "⟩",
+      -- Character to show in the first visible column of the physical line,
+      -- when there is text preceding the character visible in the first column.
+      precedes = "⟨",
+    },
 
-    -- signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    signcolumn = "yes:1", -- avoid page movement, keep Gitsign column fixed
-
-    wrap = true, -- sets vim.opt.wrap
-    -- wrap = false, -- sets vim.opt.wrap
-
-    -- column width
-    -- colorcolumn = "120",
-
-    -- Maximum width of text that is being inserted. A longer line will be broken after whitespace to get the width.
-    -- A zero value disables this.
-    textwidth = 120,
-
-    -- Specifies the number of columns that a tab character should occupy when displayed.
-    -- It determines how many spaces are used for each tab when you press the Tab key.
-    tabstop = 2,
+    -- String to put at the start of lines that have been wrapped.
+    showbreak = "↪ ",
 
     -- specifies the number of spaces or columns that the cursor will move when you press the Tab key,
     -- even if you're using actual tab characters (\t) for indentation.
     -- Useful for consistent cursor movement and alignment when using tabs for indentation.
     softtabstop = 2,
 
+    -- not set in defaults
+    spell = false, -- sets vim.opt.spell
+
+    -- Maximum width of text that is being inserted. A longer line will be broken after whitespace to get the width.
+    -- A zero value disables this.
+    textwidth = 120,
+
+    -- =============================================================================
+    -- Overrides of default options set in ~/.config/nvim/lua/astronvim/options.lua
+    -- =============================================================================
+
+    signcolumn = "yes:1", -- avoid page movement, keep Gitsign column fixed
+
+    -- Enable wrapping of lines longer than the width of window
+    wrap = true, -- sets vim.opt.wrap
+
+    -- Specifies the number of columns that a tab character should occupy when displayed.
+    -- It determines how many spaces are used for each tab when you press the Tab key.
+    -- tabstop = 2,
+
     -- Specifies the number of spaces to be used for each level of indentation
     -- when using soft tabs (spaces instead of tabs).
-    shiftwidth = 2,
+    -- shiftwidth = 2,
 
     -- Tell Neovim to use spaces instead of tabs for indentation when set to true.
-    expandtab = true,
+    -- expandtab = true,
 
-    -- add support for showing hidden whitespace characters
-    -- toggle for on/off status
-    list = true,
-
-    showbreak = "↪ ",
-
-    -- character configs
-    listchars = {
-      tab = "→ ",
-      eol = "↲",
-      nbsp = "␣",
-      space = "·",
-      lead = "·",
-      trail = "•",
-      extends = "⟩",
-      precedes = "⟨",
-    },
-
+    -- Characters to fill the statuslines, vertical separators and special lines in the window.
     fillchars = {
       eob = " ",
       fold = " ",
